@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Weather</title>
+   
+</head>
+<body>
+    <div id="circ"></div>
+    
+    <div id="back">
+        <h1>Weather Check</h1>
+        <form action="/" method="POST">
+            <input type="text" name="city" placeholder="Enter Your City Name">
+            <button type="submit" name="submit" class="btn">Check</button>
+        </form>
+    </div>
+
+    
+    <script defer>
+        let circle = document.querySelector("#circ");
+
+        window.addEventListener("mousemove", (e) => {
+            circle.style.left = e.pageX + 'px';
+            circle.style.top = e.pageY + 'px';
+        })
+    </script>
+</body>
+</html>
